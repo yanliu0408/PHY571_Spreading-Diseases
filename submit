@@ -1,0 +1,7 @@
+#!/bin/sh
+#SBATCH --job-name=myrun
+#SBATCH --output=report
+#SBATCH --partition=SallesInfo
+#SBATCH --ntasks=64
+
+mpirun -np 34 /usr/local/anaconda3/bin/python Influenza_6d.py
